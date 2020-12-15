@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TestITSamsung</string>
+    <string name="Buttn">ЗАКОНЧИТЬ ТЕСТИРОВАНИЕ</string>
+    <string name="txt1">1. Какой уровень доступа имеет модификатор Protected?</string>
+    <string name="txt2">На уровне класса</string>
+    <string name="txt3">На уровне пакета</string>
+    <string name="txt21">2. Какой обьект в Android Studio позволяет пользователю вводить в него текст</string>
+    <string name="txt4">EditText</string>
+    <string name="txt5">SetText</string>
+    <string name="txt31">3. Какой прослушиватель есть у кнопки?</string>
+    <string name="txt6">OnClickSetListener</string>
+    <string name="txt7">SetOnClickListener</string>
+</resources>
