@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView QuestionText1;
     private RadioButton secondAnsw;
     private RadioButton thirdAnsw;
-    private int score = 0;
+    int score = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
                 QuestionText1.setTextColor(Color.GREEN);
                 score += 1;
             }
-            Intent intent = new Intent(MainActivity.this, Question.class);
+            Intent intent = new Intent(this, Question.class);
             intent.putExtra("score", score);
             startActivity(intent);
         });

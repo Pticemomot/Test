@@ -24,7 +24,8 @@
 
         <RadioGroup
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            tools:ignore="UselessParent">
 
             <RadioButton
                 android:id="@+id/radioButton3"
@@ -41,24 +42,12 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="4dp">
-
-        <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-
-    </LinearLayout>
-
     <Button
         android:id="@+id/button2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/orange"
         android:text="@string/Buttn"
-        android:onClick="onMyButtonClick"/>
+        android:onClick="ButtonStart"/>
 
 </LinearLayout>

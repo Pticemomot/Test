@@ -13,6 +13,7 @@ public class Question extends AppCompatActivity {
     private TextView QuestionText1;
     private RadioButton secondAnsw;
     private RadioButton thirdAnsw;
+    int score;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,14 +24,16 @@ public class Question extends AppCompatActivity {
         QuestionText1 = findViewById(R.id.text2);
         secondAnsw = findViewById(R.id.radioButton3);
         thirdAnsw = findViewById(R.id.radioButton4);
+        score = getIntent().getIntExtra("score", 0);
     }
-    public void onMyButtonClick(View view)
+    public void ButtonStart(View view)
     {
         if (secondAnsw.isChecked()) {
             QuestionText1.setTextColor(Color.RED);
         }
         if (thirdAnsw.isChecked()) {
             QuestionText1.setTextColor(Color.GREEN);
+            score += 1;
         }
         Intent intent = new Intent(Question.this, FinalActivity.class);
         intent.putExtra("score", score);
